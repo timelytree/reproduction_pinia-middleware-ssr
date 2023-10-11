@@ -1,8 +1,5 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devServer: {
-    // port: frontendPort,
-    // host: process.env.NODE_ENV !== 'development' ? '0.0.0.0' : 'localhost',
     ...(process.env.NODE_ENV === 'development' && {
       https: {
         key: 'localhost_key.pem',
